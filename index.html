@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compare Health Insurance Plans — Bronze · Silver · Gold</title>
+  <meta name="description" content="Side-by-side comparison of Bronze, Silver and Gold health insurance plans: premiums, coverage limits, benefits, copay and waiting periods." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 90 20v30c0 25-17 40-40 45C27 90 10 75 10 50V20Z' fill='%231d5fd6'/%3E%3Cpath d='M30 50l14 14 26-30' stroke='%23fff' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <p class="eyebrow">Health Insurance Plans</p>
+    <h1>Find the plan that fits you</h1>
+    <p class="lede">
+      Compare Bronze, Silver and Gold side by side —
+      <span class="legend-item"><span class="indicator yes" aria-hidden="true">✓</span> included</span>,
+      <span class="legend-item"><span class="indicator no" aria-hidden="true">✕</span> not covered</span>,
+      and the <span class="legend-item"><span class="legend-best">best value</span></span> in each row is highlighted.
+    </p>
+  </header>
+
+  <main>
+    <noscript>
+      <p class="noscript-warning">This comparison requires JavaScript to render. Please enable JavaScript and reload.</p>
+    </noscript>
+
+    <section aria-label="Plan comparison">
+      <!-- Desktop / tablet: comparison table -->
+      <div class="table-scroll" id="table-view"></div>
+      <!-- Mobile: stacked plan cards (rendered from the same config) -->
+      <div class="card-view" id="card-view"></div>
+    </section>
+
+    <section class="footnotes" aria-label="Notes">
+      <p>¹ <strong>Coverage per $1 of premium</strong> — annual limit, reduced by your copay share, divided by annual premium. The plan with the highest score earns the <strong>★ Recommended</strong> badge.</p>
+      <p><strong>Unlimited</strong> means the plan places no cap on the number of visits or days.</p>
+      <p>All amounts in USD. This page is for illustration; refer to the policy wording for full terms.</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>AI Engineering Challenge 01 — Insurance Plan Comparison</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
