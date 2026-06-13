@@ -2,6 +2,8 @@
 
 A static, dependency-free web page that compares three health insurance plans (Bronze / Silver / Gold) side by side.
 
+**Live demo:** https://papaya-ai-challenge-01.vercel.app/
+
 ## How to run
 
 No build step. Either:
